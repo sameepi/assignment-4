@@ -8,7 +8,6 @@ class App {
     public function __construct() {
         $url = $this->parseUrl();
 
-        // Default controller and method logic moved here
         if (isset($_COOKIE['token'])) {
             $this->controller = 'Reminders';
             $this->method = 'index';

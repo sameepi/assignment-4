@@ -9,7 +9,7 @@ class AuthController extends Controller {
             $user = $userModel->login($email, $password);
             if ($user) {
                 $_SESSION['user_id'] = $user['id'];
-                header('Location: /assignment4/public/index.php?url=reminders/index');
+                header('Location: /index.php?url=reminders/index');
                 exit;
             } else {
                 echo "Invalid credentials";
@@ -40,7 +40,7 @@ class AuthController extends Controller {
         $userModel->insert($user);
 
                 $_SESSION['user_email'] = $email;
-        header("Location: /assignment4/public/index.php?url=auth/login");
+        header("Location: /index.php?url=auth/login");
         exit;
     }
 
@@ -49,6 +49,6 @@ class AuthController extends Controller {
 
     public function logout() {
         session_destroy();
-        header('Location: /assignment4/auth/login');
+        header('Location: /index.php?url=auth/login');
     }
 }

@@ -20,7 +20,7 @@ class Reminders extends Controller {
 
             if (isset($_SESSION['user_id'])) {
                 $reminderModel->create_reminder($_SESSION['user_id'], $_POST['subject']);
-                header("Location: /assignment4/public/index.php?url=reminders/index");
+                header("Location: /index.php?url=reminders/index");
                 exit;
             }
 
@@ -34,7 +34,7 @@ class Reminders extends Controller {
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'])) {
             $reminderModel = $this->model('Reminder');
             $reminderModel->delete_reminder($_POST['id']);
-            header("Location: /assignment4/public/index.php?url=reminders/index");
+            header("Location: index.php?url=reminders/index");
             exit;
         }
     }
@@ -44,7 +44,7 @@ class Reminders extends Controller {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'], $_POST['subject'])) {
             $reminderModel->update_reminder($_POST['id'], $_POST['subject']);
-            header("Location: /assignment4/public/index.php?url=reminders/index");
+            header("Location: index.php?url=reminders/index");
             exit;
         }
 
