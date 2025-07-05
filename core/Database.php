@@ -1,4 +1,4 @@
-git push origin HEAD:<?php
+<?php
 class Database {
     private $host = 'hfo7d.h.filess.io';
     private $dbname = 'user_teamsithay';
