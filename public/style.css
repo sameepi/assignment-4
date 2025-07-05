@@ -1,0 +1,92 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f4f8;
+        margin: 0;
+        padding: 20px;
+    }
+
+.container {
+        max-width: 600px;
+        margin: auto;
+    }
+
+.card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+h1, h2 {
+        color: #333;
+    }
+
+form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+button {
+        padding: 10px;
+        background-color: #0066cc;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s ease;
+    }
+
+button:hover {
+        background-color: #005bb5;
+    }
+
+a.button-link {
+        display: inline-block;
+        padding: 8px 14px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+li {
+        background: #f9f9f9;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.reminder-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+.reminder-actions a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+.reminder-actions a:hover {
+        text-decoration: underline;
+    }
